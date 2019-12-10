@@ -354,7 +354,6 @@ app.sendDocument(
 
 ## Greeting
 ```js
-
   let date = new Date()
   date.setHours((date.getHours()+5),(date.getMinutes()+30)) //Convert from UTC to IST
   let hours = date.getHours() 
@@ -393,3 +392,19 @@ if(app.prediction && app.prediction.intent && app.prediction.confidence > 0.8){
 Use {{{}}} for unicodes in Localization
 ```
 
+## Send Event from Front End to the Bot
+```js
+var iframe = document.getElementById('ymIframe');
+iframe.contentWindow.postMessage(JSON.stringify({
+ event_code: 'ym-client-event',
+ data: JSON.stringify({
+  event: {
+   code: "event-code",
+   data: { // Payload - keys can be changed
+    title: "event-title", //optional
+    agenda: "event-description" //optional
+   },
+  }
+ })
+}), null);
+```

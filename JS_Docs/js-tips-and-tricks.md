@@ -1,3 +1,10 @@
+# API
+
+### Pokemon API
+```
+https://ironhack-pokeapi.herokuapp.com/pokemon/{id}
+```
+
 # Type Conversion
 
 ## Convert anything to a string
@@ -131,3 +138,13 @@ let object3 = {...object1,...object2}
 console.log(object3) // { key1 : "value1", key2 : "value2"}
 ```
 
+## Destructuring Aliases
+```js
+let object = {
+  key1 : "Red"
+}
+
+let {key1 : color} = object // Give Alias name to the Destructured key-value
+
+console.log(color) // 'Red'
+```

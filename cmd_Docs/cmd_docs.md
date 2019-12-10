@@ -1,8 +1,25 @@
 # Windows
 
+## Get System Information
+```bash
+systeminfo
+```
+
 ## Move Files 
 ```bash
 mv source destination
+```
+
+## Copy Files
+
+##### Single File
+```bash
+cp source destination
+```
+
+##### Multiple Files
+```bash
+robocopy source/folder destination/folder	file1 file2 file3
 ```
 
 ## Open System Properties
