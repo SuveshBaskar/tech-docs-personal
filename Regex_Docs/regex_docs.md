@@ -38,3 +38,8 @@ let data = `Interest on Term lending money Q3FY18  FY18 `
 
 console.log(data.replace(/(q[\d]|f).+?(?=(\s|$))/gi,""))
 ```
+
+## Named Regex Groups
+```regex
+/(?<first_number>\d{2})(?<second_number>\d{2})/gi
+```
