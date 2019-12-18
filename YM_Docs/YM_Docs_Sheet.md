@@ -408,3 +408,8 @@ iframe.contentWindow.postMessage(JSON.stringify({
  })
 }), null);
 ```
+
+### Show Web View
+```js
+app.sendWebView("", 'https://yellow.chat/johnsonnjohnson.html', 240)
+```
